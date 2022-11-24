@@ -6,6 +6,8 @@ Design, implement, and evaluate a system that collects text data from large open
 keywords in large collections of text depending on the language of the keywords.
 - Design and implement an approach to collect the domain-specific data.
 
+Project presentation is [here](https://github.com/anastasia-zhukova/domain-corpus-aquisition/blob/master/220201_Flegelskamp_final_presentation.pdf)
+
 ## Setup
 The needed packages can be installed with pip
 ```sh
