@@ -54,7 +54,7 @@ def get_most_similar_words(keyword: str, model: fasttext.FastTextKeyedVectors, n
     Returns:
         List[str]: List of most similar words.
     """
-    most_similar = model.most_similar(topn=num_words)
+    most_similar = model.most_similar(positive=keyword, topn=num_words)
     most_similar_words = [word[0] for word in most_similar]
     return most_similar_words
 

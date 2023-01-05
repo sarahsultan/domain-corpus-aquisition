@@ -19,7 +19,7 @@ def create_dataset(keyword_list: List[str], save_file: str, language: str = "en"
         model = None
     wikipedia_categories_list = []
     for keyword in keyword_list:
-        expanded_keywords = expand_query(keyword, language, model)
+        expanded_keywords = expand_query(keyword, model, language)
         expanded_keywords.extend(keyword)
         wikidata_links = search_wikidata_multithread(expanded_keywords, num_of_results=20, max_threads=10)
         wikipedia_links = extract_links_multithread(
